@@ -1,0 +1,224 @@
+// This file contains all variables that are provided from the designer's styleguide
+
+/********** Global elements Styles **********/
+/* Global elements Styles */
+body,
+button,
+input,
+select,
+textarea {
+  color: $text-color;
+  font-family: $primary-site-font;
+  -webkit-font-smoothing: antialiased;
+  font-weight: $font-weight-normal;
+  font-size: 14px;
+  line-height: 1.75;
+}
+body {
+  background-color: $body-bg;
+  margin: 0 auto;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  clear: both;
+  font-family: $primary-site-font;
+  font-weight: $font-weight-bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px 0;
+  font-weight: $font-weight-semibold;
+}
+
+h1,
+.h1 {
+  @include font-size(60px);
+  line-height: 1.3;
+}
+h2,
+.h2 {
+  @include font-size(44px);
+  line-height: 1.2;
+}
+h3,
+.h3 {
+  @include font-size(28px);
+  line-height: 1.1;
+}
+h4,
+.h4 {
+  @include font-size(20px);
+  line-height: 1.1;
+}
+h5,
+.h5 {
+  @include font-size(18px);
+  line-height: 1.1;
+}
+h6,
+.h6 {
+  @include font-size(14px);
+  line-height: 1.1;
+}
+
+/********** Buttons **********/
+// button-size($padding-y, $padding-x, $font-size, $border-radius)
+.btn {
+  @include button-size(10px, 24px, 16px, 50px);
+  border: none;
+}
+
+.btn:focus .btn:active {
+  outline: none;
+}
+
+.btn.btn-primary {
+  background-color: green;
+  color: black;
+  &:hover {
+    background-color: rgb(0, 81, 0);
+    color: black;
+  }
+}
+
+/********** Social Icons **********/
+
+/********** Form Styles **********/
+
+/********** Pager **********/
+
+/********** Responsive Typography **********/
+// html {
+//     font-size: 1rem;
+//   }
+
+@include media-breakpoint-up(sm) {
+  h1,
+  .h1 {
+    @include font-size(34px);
+    line-height: 1.3;
+  }
+  h2,
+  .h2 {
+    @include font-size(30px);
+    line-height: 1.3;
+  }
+  h3,
+  .h3 {
+    @include font-size(26px);
+    line-height: 1.2;
+  }
+  h4,
+  .h4 {
+    @include font-size(22px);
+    line-height: 1.6;
+  }
+  h5,
+  .h5 {
+    @include font-size(18px);
+    line-height: 1.4;
+  }
+  h6,
+  .h6 {
+    @include font-size(16px);
+    line-height: 1.4;
+  }
+  p {
+    @include font-size(14px);
+    line-height: 1.75;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  h1,
+  .h1 {
+    @include font-size(46px);
+    line-height: 1.3;
+  }
+  h2,
+  .h2 {
+    @include font-size(34px);
+    line-height: 1.2;
+  }
+  h3,
+  .h3 {
+    @include font-size(28px);
+    line-height: 1.2;
+  }
+  h4,
+  .h4 {
+    @include font-size(24px);
+    line-height: 1.6;
+  }
+  h5,
+  .h5 {
+    @include font-size(22px);
+    line-height: 1.4;
+  }
+  h6,
+  .h6 {
+    @include font-size(18px);
+    line-height: 1.4;
+  }
+  p {
+    @include font-size(16px);
+    line-height: 1.75;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  h1,
+  .h1 {
+    @include font-size(52px);
+    line-height: 1.3;
+  }
+  h2,
+  .h2 {
+    @include font-size(38px);
+    line-height: 1.2;
+  }
+  h3,
+  .h3 {
+    @include font-size(30px);
+    line-height: 1.2;
+  }
+  h4,
+  .h4 {
+    @include font-size(26px);
+    line-height: 1.6;
+  }
+  h5,
+  .h5 {
+    @include font-size(22px);
+    line-height: 1.4;
+  }
+  h6,
+  .h6 {
+    @include font-size(20px);
+    line-height: 1.4;
+  }
+  p {
+    @include font-size(16px);
+    line-height: 1.75;
+  }
+}

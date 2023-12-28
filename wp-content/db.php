@@ -1,0 +1,1 @@
+/Users/carlogia/Local Sites/custom-understrap-demo/app/public/wp-content/plugins/query-monitor/wp-content/db.php
