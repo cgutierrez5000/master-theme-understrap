@@ -7,6 +7,9 @@
 @import "assets/fontawesome/font-awesome"; // <------- Font Awesome Icon font
 @import "assets/underscores"; // <------- Underscores media styles
 
+// Vendors
+@import "vendors/slick/slick-styles";
+@import "vendors/magnific-popup/main";
 // Any additional imported files //
 @import "theme/child_theme"; // <------- Add your styles into this file
 @import "assets/understrap/theme/colors"; // <-------- This creates the necessary bootstrap color classes.

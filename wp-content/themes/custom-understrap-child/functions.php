@@ -49,6 +49,13 @@ function theme_enqueue_styles() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
+	// Load slick.js
+	wp_enqueue_script('slick', get_stylesheet_directory_uri() . '/vendors/slick/slick.min.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script('sliders', get_stylesheet_directory_uri() . '/vendors/sliders.js', array('jquery'), '1.0.0', true);
+
+	// Load magnific-popup
+	wp_enqueue_script('magnific-popup', get_stylesheet_directory_uri() . '/vendors/magnific-popup/jquery.magnific-popup.min.js', array('jquery'), '1.0.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 

@@ -6743,6 +6743,13 @@
 	  }
 	})();
 
+	// Add your custom JS here.
+	jQuery(document).ready(function ($) {
+	  jQuery(".my-popup").magnificPopup({
+	    type: "image"
+	  });
+	});
+
 	exports.Alert = alert;
 	exports.Button = button;
 	exports.Carousel = carousel;
